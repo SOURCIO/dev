@@ -1,0 +1,550 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="Teimour">
+  <link rel="shortcut icon" href="#" type="image/png">
+
+  <title>Sourcio - Resultats </title>
+
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style-responsive.css" rel="stylesheet">
+  <link href="css/nv.d3.css" rel="stylesheet">
+  
+  <link href="js/advanced-datatable/css/demo_page.css" rel="stylesheet" />
+  <link href="js/advanced-datatable/css/demo_table.css" rel="stylesheet" />
+  <link rel="stylesheet" href="js/data-tables/DT_bootstrap.css" />
+
+  
+  <style>
+
+#chart svg {
+  height: 400px;
+}
+
+</style>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="js/html5shiv.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body class="sticky-header">
+
+<section>
+    <!-- left side start-->
+    <div class="left-side sticky-left-side">
+
+        <!--logo and iconic logo start-->
+        <div class="logo">
+            <a href="sourcio_login.html"><img src="images/sourcio_logo.png" alt="" width="80%" height="80%"></a>
+        </div>
+
+        <div class="logo-icon text-center">
+            <a href="sourcio_login.html"><img src="images/sourcio_logo.png" alt="" width="20%" height="20%"></a>
+        </div>
+        <!--logo and iconic logo end-->
+
+
+        <div class="left-side-inner">
+
+            <!-- visible to small devices only -->
+            <div class="visible-xs hidden-sm hidden-md hidden-lg">
+                <div class="media logged-user">
+                    <img alt="" src="images/photos/user-avatar.png" class="media-object">
+                    <div class="media-body">
+                        <h4><a href="#">Mr. X</a></h4>
+                        <span>"."</span>
+                    </div>
+                </div>
+
+                <h5 class="left-nav-title">Account Information</h5>
+                <ul class="nav nav-pills nav-stacked custom-nav">
+                    <li><a href="#"><i class="fa fa-user"></i> <span>Profil</span></a></li>
+                    <li><a href="#"><i class="fa fa-cog"></i> <span>Paramètres</span></a></li>
+                    <li><a href="#"><i class="fa fa-sign-out"></i> <span>Deconnexion</span></a></li>
+                </ul>
+            </div>
+
+            <!--sidebar nav start-->
+            <ul class="nav nav-pills nav-stacked custom-nav">
+                
+                <li class="menu-list"><a href=""><i class="fa fa-eye"></i> <span>Veille</span></a>
+                    <ul class="sub-menu-list">
+                        <li ><a href="sourcio_sevices.html">Analyse Sectorielle</a></li>
+                        <li><a href="sourcio_sevices.html">Alertes</a></li>
+                    </ul>
+                </li>
+                <li class="menu-list"><a href=""><i class="fa fa-rocket"></i> <span>Sourcing</span></a>
+                    <ul class="sub-menu-list">
+                        <li><a href="sourcio_sevices.html"> Ciblage</a></li>
+                        <li><a href="sourcio_sevices.html"> Sourcing privé</a></li>
+                        <li><a href="sourcio_sevices.html"> Sourcing public</a></li>
+                    </ul>
+                </li>
+                <li class="menu-list"><a href=""><i class="fa fa-check-square-o"></i> <span>Evaluation</span></a>
+                    <ul class="sub-menu-list">
+                        <li><a href="grids.html"> </a></li>
+                        <li><a href="gallery.html"></a></li>
+
+                    </ul>
+                </li>
+
+
+            </ul>
+            <!--sidebar nav end-->
+
+        </div>
+    </div>
+    <!-- left side end-->
+    
+    <!-- main content start-->
+    <div class="main-content" >
+
+        <!-- header section start-->
+        <div class="header-section">
+
+        <!--toggle button start-->
+        <a class="toggle-btn"><i class="fa fa-bars"></i></a>
+        <!--toggle button end-->
+
+        <!--search start-->
+        <form class="searchform" action="index.html" method="post">
+            <input type="text" class="form-control" name="keyword" placeholder="Search here..." />
+        </form>
+        <!--search end-->
+
+        <!--notification menu start -->
+        <div class="menu-right">
+            <ul class="notification-menu">
+                <li>
+                    <a href="#" class="btn btn-default dropdown-toggle info-number" data-toggle="dropdown">
+                        <i class="fa fa-tasks"></i>
+                        <span class="badge">8</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-head pull-right">
+                        <h5 class="title">You have 8 pending task</h5>
+                        <ul class="dropdown-list user-list">
+                            <li class="new">
+                                <a href="#">
+                                    <div class="task-info">
+                                        <div>Database update</div>
+                                    </div>
+                                    <div class="progress progress-striped">
+                                        <div style="width: 40%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-warning">
+                                            <span class="">40%</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="new">
+                                <a href="#">
+                                    <div class="task-info">
+                                        <div>Dashboard done</div>
+                                    </div>
+                                    <div class="progress progress-striped">
+                                        <div style="width: 90%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="90" role="progressbar" class="progress-bar progress-bar-success">
+                                            <span class="">90%</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="task-info">
+                                        <div>Web Development</div>
+                                    </div>
+                                    <div class="progress progress-striped">
+                                        <div style="width: 66%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="66" role="progressbar" class="progress-bar progress-bar-info">
+                                            <span class="">66% </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="task-info">
+                                        <div>Mobile App</div>
+                                    </div>
+                                    <div class="progress progress-striped">
+                                        <div style="width: 33%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="33" role="progressbar" class="progress-bar progress-bar-danger">
+                                            <span class="">33% </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="task-info">
+                                        <div>Issues fixed</div>
+                                    </div>
+                                    <div class="progress progress-striped">
+                                        <div style="width: 80%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" role="progressbar" class="progress-bar">
+                                            <span class="">80% </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="new"><a href="">See All Pending Task</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="btn btn-default dropdown-toggle info-number" data-toggle="dropdown">
+                        <i class="fa fa-envelope-o"></i>
+                        <span class="badge">5</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-head pull-right">
+                        <h5 class="title">You have 5 Mails </h5>
+                        <ul class="dropdown-list normal-list">
+                            <li class="new">
+                                <a href="">
+                                    <span class="thumb"></span>
+                                        <span class="desc">
+                                          <span class="name">Mr X. <span class="badge badge-success">new</span></span>
+                                          <span class="msg">Lorem ipsum dolor sit amet...</span>
+                                        </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="thumb"><img src="images/photos/user2.png" alt="" /></span>
+                                        <span class="desc">
+                                          <span class="name">Jonathan Smith</span>
+                                          <span class="msg">Lorem ipsum dolor sit amet...</span>
+                                        </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="thumb"><img src="images/photos/user3.png" alt="" /></span>
+                                        <span class="desc">
+                                          <span class="name">Jane Doe</span>
+                                          <span class="msg">Lorem ipsum dolor sit amet...</span>
+                                        </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="thumb"><img src="images/photos/user4.png" alt="" /></span>
+                                        <span class="desc">
+                                          <span class="name">Mark Henry</span>
+                                          <span class="msg">Lorem ipsum dolor sit amet...</span>
+                                        </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="thumb"><img src="images/photos/user5.png" alt="" /></span>
+                                        <span class="desc">
+                                          <span class="name">Jim Doe</span>
+                                          <span class="msg">Lorem ipsum dolor sit amet...</span>
+                                        </span>
+                                </a>
+                            </li>
+                            <li class="new"><a href="">Read All Mails</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="btn btn-default dropdown-toggle info-number" data-toggle="dropdown">
+                        <i class="fa fa-bell-o"></i>
+                        <span class="badge">4</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-head pull-right">
+                        <h5 class="title">Notifications</h5>
+                        <ul class="dropdown-list normal-list">
+                            <li class="new">
+                                <a href="">
+                                    <span class="label label-danger"><i class="fa fa-bolt"></i></span>
+                                    <span class="name">Server #1 overloaded.  </span>
+                                    <em class="small">34 mins</em>
+                                </a>
+                            </li>
+                            <li class="new">
+                                <a href="">
+                                    <span class="label label-danger"><i class="fa fa-bolt"></i></span>
+                                    <span class="name">Server #3 overloaded.  </span>
+                                    <em class="small">1 hrs</em>
+                                </a>
+                            </li>
+                            <li class="new">
+                                <a href="">
+                                    <span class="label label-danger"><i class="fa fa-bolt"></i></span>
+                                    <span class="name">Server #5 overloaded.  </span>
+                                    <em class="small">4 hrs</em>
+                                </a>
+                            </li>
+                            <li class="new">
+                                <a href="">
+                                    <span class="label label-danger"><i class="fa fa-bolt"></i></span>
+                                    <span class="name">Server #31 overloaded.  </span>
+                                    <em class="small">4 hrs</em>
+                                </a>
+                            </li>
+                            <li class="new"><a href="">See All Notifications</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        
+                        Mr X.
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-usermenu pull-right">
+                        <li><a href="#"><i class="fa fa-user"></i>  Profile</a></li>
+                        <li><a href="#"><i class="fa fa-cog"></i>  Settings</a></li>
+                        <li><a href="#"><i class="fa fa-sign-out"></i> Log Out</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+        <!--notification menu end -->
+
+        </div>
+        <!-- header section end-->
+
+        <!-- page heading start-->
+        <!--<div class="page-heading">-->
+            <!--Page Tittle goes here-->
+        <!--</div>-->
+        <!-- page heading end-->
+
+        <!--body wrapper start-->
+        <div class="wrapper">
+
+		
+		<!-- START GRAPH AREA-->
+		<div class="row">
+                <div class="col-sm-12">
+                    <section class="panel">
+                        <header class="panel-heading">
+                            RESULTATS CORRESPONDANT A VOS CRITERES
+                        <span class="tools pull-right">
+                            <a href="javascript:;" class="fa fa-chevron-down"></a>
+                            <a href="javascript:;" class="fa fa-times"></a>
+                         </span>
+                        </header>
+                        <div class="panel-body">
+						<div class="row">
+							<div class="col-lg-8">
+                            <div class="chartJS">
+                                <canvas id="line-chart-js" height="250" width="700" ></canvas>
+                            </div>
+							</div>
+							<div class="col-lg-4">
+                            <h5> Sur vos critères :</h5>
+							<button class="btn btn-warning3" type="button" align="left"><i class="fa fa-rocket"></i> Nombre de Startups </button>
+							 <h5></h5>
+							<button class="btn btn-warning2" type="button"><i class="fa fa-rss-square"></i> Nombre de News/Evenements </button>
+                            </div>
+						</div>
+						
+                        </div>
+                    </section>
+                </div>
+            </div>
+			
+			<!-- START BUTTON AREA-->
+		<div class="row">
+                <div class="col-sm-12">
+                    <section class="panel">
+                        <div class="panel-body">
+						<div class="row">
+							<div class="col-sm-12" align="center">
+							<button class="btn-lg btn-warning4" type="button" align="left"><i class="fa fa-toggle-left"></i> Modifier recherche </button>
+							<button class="btn-lg btn-warning5" type="button" align="left"><i class="fa fa-flask"></i> Analyser offre en detail </button>
+							<button class="btn-lg btn-warning6" type="button" align="left"><i class="fa fa-save"></i> Sauvegarder votre recherche </button>
+                            </div>
+						</div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+			
+		        <div class="row">
+        <div class="col-sm-12">
+        <section class="panel">
+        <header class="panel-heading">
+            TOP STARTUPS CORRESPONDANT A VOS CRITERES
+            <span class="tools pull-right">
+                <a href="javascript:;" class="fa fa-chevron-down"></a>
+                <a href="javascript:;" class="fa fa-times"></a>
+             </span>
+        </header>
+        <div class="panel-body">
+        <div class="adv-table">
+        <table  class="display table table-bordered table-striped" id="dynamic-table">
+        <thead>
+        <tr>
+            <th></th>
+			<th>Startup</th>
+			<th>Mission</th>
+            <th>Potentiel</th>
+            <th class="hidden-phone">Synergies</th>
+            <th class="hidden-phone">Collaboration</th>
+			<th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="gradeX">
+            <td style="vertical-align:middle" align="center"><a href="sourcio_profile.html"><img alt="" src="images/logo_colisweb.jpg" height="80" width="80" ></a></td>
+            <td style="vertical-align:middle">COLIS WEB</td>
+            <td style="vertical-align:middle">Pour le prix d'une livraison classique, il est désormais possible de se faire livrer en moins de deux heures sur rendez-vous.</td>
+            <td style="vertical-align:middle">
+			<div class="progress progress-xs"><div style="width: 80%;" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-success"> <span>H+</span></div>
+			</div>
+			</td>
+			<td style="vertical-align:middle">
+			<div class="progress progress-xs"><div style="width: 20%;" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-warning"> <span>F</span></div>
+			</td>
+            <td style="vertical-align:middle">
+			<div class="progress progress-xs"><div style="width: 40%;" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar"> <span>M</span></div>
+			</td>
+			<td style="vertical-align:middle">
+			<button class="btn btn-primary" data-toggle="button">
+                                            <i class="fa fa-plus"></i>
+			</td>	
+        </tr>
+		<tr class="gradeX">
+            <td style="vertical-align:middle" align="center"><img alt="" src="images/logo_colisweb.jpg" height="80" width="80" > </td>
+            <td style="vertical-align:middle">COLIS WEB</td>
+            <td style="vertical-align:middle">Pour le prix d'une livraison classique, il est désormais possible de se faire livrer en moins de deux heures sur rendez-vous.</td>
+            <td style="vertical-align:middle">
+			<div class="progress progress-xs"><div style="width: 80%;" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-success"> <span>H+</span></div>
+			</div>
+			</td>
+			<td style="vertical-align:middle">
+			<div class="progress progress-xs"><div style="width: 20%;" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-warning"> <span>F</span></div>
+			</td>
+            <td style="vertical-align:middle">
+			<div class="progress progress-xs"><div style="width: 40%;" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar"> <span>M</span></div>
+			</td>
+			<td style="vertical-align:middle">
+			<button class="btn btn-primary" data-toggle="button">
+                                            <i class="fa fa-plus"></i>
+			</td>
+        </tr>
+		<tr class="gradeX">
+            <td style="vertical-align:middle" align="center"><img alt="" src="images/logo_colisweb.jpg" height="80" width="80" > </td>
+            <td style="vertical-align:middle">COLIS WEB</td>
+            <td style="vertical-align:middle">Pour le prix d'une livraison classique, il est désormais possible de se faire livrer en moins de deux heures sur rendez-vous.</td>
+            <td style="vertical-align:middle">
+			<div class="progress progress-xs"><div style="width: 80%;" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-success"> <span>H+</span></div>
+			</div>
+			</td>
+			<td style="vertical-align:middle">
+			<div class="progress progress-xs"><div style="width: 20%;" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-warning"> <span>F</span></div>
+			</td>
+            <td style="vertical-align:middle">
+			<div class="progress progress-xs"><div style="width: 40%;" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar"> <span>M</span></div>
+			</td>
+			<td style="vertical-align:middle">
+			<button class="btn btn-primary" data-toggle="button">
+                                            <i class="fa fa-plus"></i>
+			</td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <th></th>
+			<th>Startup</th>
+			<th>Mission</th>
+            <th>Potentiel</th>
+            <th class="hidden-phone">Synergies</th>
+            <th class="hidden-phone">Collaboration</th>
+			<th></th>
+        </tr>
+        </tfoot>
+        </table>
+        </div>
+        </div>
+        </section>
+        </div>
+        </div>
+		
+		<!-- END RESULTS TABLE-->
+
+		
+        </div>
+        <!--body wrapper end-->
+
+        <!--footer section start-->
+        <footer class="">
+            2014 &copy; sourc.io
+        </footer>
+        <!--footer section end-->
+
+
+    </div>
+    <!-- main content end-->
+</section>
+
+<!-- Placed js at the end of the document so the pages load faster -->
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/jquery-ui-1.9.2.custom.min.js"></script>
+<script src="js/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/modernizr.min.js"></script>
+<script src="js/jquery.nicescroll.js"></script>
+
+<!--dynamic table-->
+<script type="text/javascript" language="javascript" src="js/advanced-datatable/js/jquery.dataTables.js"></script>
+<script type="text/javascript" src="js/data-tables/DT_bootstrap.js"></script>
+<!--dynamic table initialization -->
+<script src="js/dynamic_table_init.js"></script>
+
+
+<!--Chart JS-->
+<script src="js/chart-js/Chart.js"></script>
+
+<!--Sparkline Chart-->
+<script src="js/sparkline/jquery.sparkline.js"></script>
+<script src="js/sparkline/sparkline-init.js"></script>
+
+<!--google map-->
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&AMP;sensor=false"></script>
+
+<!-- D3 Core JavaScript -->
+	<script src="http://d3js.org/d3.v3.min.js"></script>
+<!-- NVD3 -->
+	<script src="js/nv.d3.min.js"></script>
+
+
+<!--common scripts for all pages-->
+<script src="js/scripts.js"></script>
+
+<script>
+var data = {
+    labels : ["T1 2013","T2 2013","T3 2013","T4 2013","T1 2014","T2 2014","T3 2014"],
+    datasets : [
+        {
+            fillColor : "rgba(211, 84, 0,0.4)",
+            strokeColor : "rgba(230, 126, 34,1.0)",
+            pointColor : "rgba(230, 126, 34,1.0)",
+            pointStrokeColor : "#fff",
+            data : [65,54,30,81,56,55,40]
+        },
+        {
+            fillColor : "rgba(44, 62, 80,0.4)",
+            strokeColor : "rgba(52, 73, 94,1.0)",
+            pointColor : "rgba(52, 73, 94,1.0)",
+            pointStrokeColor : "#fff",
+            data : [20,60,42,58,61,75,85]
+        },
+    ]
+}
+var canvas = document.getElementById("line-chart-js");
+var ctx = canvas.getContext("2d");
+new Chart(ctx).Line(data);
+</script>
+
+</body>
+</html>
